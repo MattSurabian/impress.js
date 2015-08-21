@@ -1,0 +1,181 @@
+/* RESET */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/******************
+ * impress styles *
+ ******************/
+.impress-enabled .step {
+    margin: 0;
+    opacity: 0.3;
+
+    -webkit-transition: opacity 1s;
+    -moz-transition:    opacity 1s;
+    -ms-transition:     opacity 1s;
+    -o-transition:      opacity 1s;
+    transition:         opacity 1s;
+}
+
+.impress-enabled .step.active { opacity: 1 }
+
+
+#overview { display: none }
+
+/*
+    We also make other steps visible and give them a pointer cursor using the
+    `impress-on-` class.
+*/
+.impress-on-overview .step {
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+/***********************
+ * PRESENTATION STYLES *
+ ***********************/
+body {
+    font-family: 'Droid Sans', sans-serif;
+    min-height: 740px;
+    color: rgb(30,28,29);
+    background: rgb(255,243,214);
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(255,243,214)), to(rgb(255,243,214)));
+    background: -webkit-radial-gradient(rgb(255,243,214), rgb(255,243,214));
+    background:    -moz-radial-gradient(rgb(255,243,214), rgb(255,243,214));
+    background:     -ms-radial-gradient(rgb(255,243,214), rgb(255,243,214));
+    background:      -o-radial-gradient(rgb(255,243,214), rgb(255,243,214));
+    background:         radial-gradient(rgb(255,253,214), rgb(255,243,214));
+}
+
+b, strong { font-weight: bold }
+i, em { font-style: italic }
+
+a {
+  color: rgb(30,28,29);
+  text-decoration: none;
+    padding: 0 0.1em;
+    text-shadow: -1px -1px 2px rgba(30,28,29,0.9);
+    border-radius: 0.2em;
+
+    -webkit-transition: 0.5s;
+    -moz-transition:    0.5s;
+    -ms-transition:     0.5s;
+    -o-transition:      0.5s;
+    transition:         0.5s;
+}
+
+a:hover,
+a:focus {
+    background: rgba(255,243,214,1);
+    text-shadow: -1px -1px 2px rgba(100,100,100,0.5);
+}
+
+.step {
+  position: relative;
+  width: 1000px;
+  padding: 40px;
+  margin: 20px auto;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing:    border-box;
+  -ms-box-sizing:     border-box;
+  -o-box-sizing:      border-box;
+  box-sizing:         border-box;
+
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 35px;
+  line-height: 1.5;
+}
+
+.step li{
+  font-size:40px;
+  margin-left:70px;
+}
+
+.code {
+  font-family: Consolas, monospace;
+  font-size:50px;
+}
+
+.medium{
+  font-size:100px;
+  width:1500px;
+  font-family: 'Oswald', sans-serif;}
+
+.step h1{
+ font-family: 'Oswald', sans-serif;  color: rgb(202,29,29);
+}
+
+.center{
+  text-align:center;
+}
+
+h2{
+  font-size:70px;
+  color:rgb(202,29,29);
+  font-family: 'Oswald', sans-serif;
+}
+
+
+.title{
+  width:1500px;
+  padding:0;
+  margin: 0;
+  text-align:center;
+
+  font-size:140px;
+}
+
+.doubleList {
+    width:800px;
+}
+.doubleList li{
+    width:300px;
+    float:left;
+}
+
+.playlist li{
+    font-size: 30px;
+}
