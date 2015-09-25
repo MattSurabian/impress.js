@@ -20,78 +20,93 @@
 <div id="impress">
 
     <div class="step big center title" data-x="0" data-y="0" data-scale="6" >
-        <h1>An Introduction <br/>to Pact and MSG</h1>
-    </div>
-
-
-    <div class="step big center title" data-x="0" data-y="0" data-z="50" data-rotate-x="90" data-scale="6" >
-        <h2>Or: Getting Scooped and Loving It</h2>
-    </div>
-
-    <div class="step" data-x="1500" data-y="-7500" data-scale="5" data-rotate="-90" data-rotate-y="-180">
-        <h2>The 5 Stages of Grief:</h2>
-        <ol class="playlist">
-            <li>Shock & Denial</li>
-            <li>Anger</li>
-            <li>Bargaining</li>
-            <li>Depression & Reflection</li>
-            <li>Acceptance & Hope</li>
-        </ol>
+        <h1>Desconstructing HTTPS</h1>
+        <h2>Key Exchange</h2>
     </div>
 
     <div class="step" data-x="0" data-y="-7500" data-scale="5" data-rotate="-90" data-rotate-y="-90">
-        <h2>The Playlist:</h2>
-        <ol class="playlist">
-            <li>All I Do Is Win - DJ Khaled</li>
-            <li>Wanksta - Halfdollar (50 Cent)</li>
-            <li>I'm Different - 2 Chainz</li>
-            <li>Ante Up - MOP</li>
-            <li>Tell Me When To Go - E40</li>
-            <li>A Week Ago - Jay Z</li>
-            <li>Dumb - Nirvana</li>
-            <li>Castles Made of Sand - Jimi Hendrix</li>
-            <li>Hard Knock Life - Jay Z</li>
-            <li>Money Ain't a Thang - Jay Z feat. Jermaine Duprie</li>
-            <li>Shake It Off - Taylor Swift</li>
-            <li>Give It To Me Baby - Rick James</li>
-            <li>Wide Awake - Katy Perry</li>
-            <li>Part of Me - Katy Perry</li>
-        </ol>
+        <h2>The Problem:</h2>
+        How can two parties agree to use the same secret key to encrypt information if one party never explicitly tells the other
+        which key they are using.
     </div>
 
-    <div class="step" data-x="0" data-y="-13000" data-scale="5" data-rotate="-90" data-rotate-y="-90">
-        <h2>The Idea</h2>
-        It would be great if there was a way to share secrets between many parties, human or otherwise, without
-        needing to pass around secret information like a key or password out of band. PGP can do this, but the keys
-        necessary are large and using PGP is often viewed as cumbersome and complicated.
+    <div class="step center" data-x="0" data-y="-13000" data-scale="5"  data-rotate="-90" data-rotate-y="-90">
+        <h2>IT'S IMPOSSIBLE</h2>
+    </div>
 
+    <div class="step" data-x="0" data-y="-13000" data-scale="5" data-rotate-y="180" data-rotate="-90" data-rotate-y="-90">
+        <h3>
+            Despite rudimentary cryptography being in use since before the Roman Empire it wasn't until 1976 that we realized
+            secret key exchange over a public channel was possible.
+        </h3>
     </div>
 
     <div class="step" data-x="0" data-y="-18500" data-scale="5" data-rotate="-90" data-rotate-y="-90">
-        <h2>How About NaCl?</h2>
-        A relatively new cryptographic library called NaCl provides a public-key cryptography implementation
-        and aim's to ensure it is "difficult to use incorrectly" in contrast to RSA which PGP generally leverages.
+        <h2>Diffie & Hellman, Right?</h2>
+        While the United States researchers Whitfield Diffie and Martin Helman have been the folks long credited with soliving this problem,
+        in 1997 the British Spy Agency GCHQ declassified the research of James Ellis, Clifford Cocks and Malcolm Williamson proving they had solved
+        the problem in 1975.
     </div>
 
-    <div class="step" data-x="0" data-y="-24000" data-scale="5" data-rotate="-90" data-rotate-y="-90">
-        <h2>But MultiParty!</h2>
-        Unfortunately NaCl's simplicity comes at the cost of certain features; one of which is
-        multi-party communication. NaCl excells at point to point communication with a single ciphertext. If multiple parties
-        need a secret they must also share a key or have a distinct ciphertext created with their public key.
+    <div class="step center" data-x="0" data-y="-24000" data-scale="5" data-rotate="-90" data-rotate-y="-90">
+        <h2>I've already re-forgotten their names</h2>
     </div>
 
-    <div class="step" data-x="0" data-y="-29000" data-scale="5" data-rotate="-90" data-rotate-y="-90">
-        <h2>Enter MSG</h2>
-        The idea for MSG came out of various conversations with people at Bocoup and with Calvin Metcalf.
-        MSG leverages NaCl's asymmetric crypto to secure a symmetric key used to encrypt the original message with AES-256-GCM.
-        The ciphertext is a concatenation which can be broken appart and decrypted in pieces.
+    <div class="step center" data-x="0" data-y="-24000" data-scale="5" data-rotate-y="-180" data-rotate="-90" data-rotate-y="-90">
+        <h2>Merica'</h2>
+        <img src="img/merica.gif">
     </div>
 
-    <div class="step" data-x="0" data-y="-34500" data-scale="5" data-rotate="-90" data-rotate-y="-90">
-        <h2><strike>Shoe-Phone</strike> <strike>Secrets</strike> <strike>Umami</strike> Pact?</h2>
-        <a href="https://github.com/MattSurabian/pact">Pact</a> is an application that utilizes the <a href="https://github.com/MattSurabian/msg">MSG library</a> in a practical way and allows secure multiparty communication
-        without requiring out of band secret sharing. Something neither AES-256-GCM or NaCl is capable of on their own.
+    <div class="step center" data-x="0" data-y="-29000" data-scale="5" data-rotate="-90" data-rotate-y="-90">
+        <h2>Whit Diffie's Hair Doe</h2>
+        <img src="img/Whitfield_Diffie.png">
+    </div>
 
+    <div class="step center" data-x="0" data-y="-33000" data-scale="5" data-rotate="-90" data-rotate-y="-90">
+        <h2>Modulo Arithmetic</h2>
+    </div>
+
+    <div class="step center" data-x="0" data-y="-38000" data-scale="5" data-rotate="-90" data-rotate-y="-90">
+        <h2>The discrete logarithm problem</h2>
+    </div>
+
+    <div class="step center" data-x="0" data-y="-39000" data-scale="5" data-rotate-y="180" data-rotate="-90" data-rotate-y="-90">
+        <h2>JUST KIDDING! IT'S COLORS!</h2>
+    </div>
+
+    <div class="step center" data-x="0" data-y="-44000" data-scale="5" data-rotate-y="180" data-rotate="-90" data-rotate-y="-90">
+        <h2>Unfortunately I've Learned I Don't Know Color Math</h2>
+        <img src="img/keyexchangepaint.png" height="500">
+    </div>
+
+    <div class="step" data-x="0" data-y="-50000" data-scale="5" data-rotate-y="180" data-rotate="-90" data-rotate-y="-90">
+        <h2>Fortunately the Real Math Works</h2>
+        <ul>
+            <li>Start by publically agreeing on a prime number and primitive root, for this example 2 is a primitive root of 13
+            <ul>
+                <li>Easy to go in one direction 2<sup>34</sup> mod 13 = X</li>
+                <li>Hard to go the other way 10 = 2<sup>X</sup> mod 13</li>
+            </ul>
+            </li>
+            <li>
+                Each side has their own secret number Y1 and Y2, which they use to compute a number they can share
+                <ul>
+                    <li>2<sup>y</sup> mod 13</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="step" data-x="0" data-y="-55500" data-scale="5" data-rotate-y="180" data-rotate="-90" data-rotate-y="-90">
+        <h2>WOAH</h2>
+        <ul>
+            <li>
+                That shared number is then raised to the power of each sides secret number and each side ends up with the same final number!
+                <ul>
+                    <li>Because: (g<sup>a</sup>)<sup>b</sup> mod p = (g<sup>b</sup>)<sup>a</sup> mod p</li>
+                </ul>
+            </li>
+        </ul>
     </div>
 
 </div>
